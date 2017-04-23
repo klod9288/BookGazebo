@@ -18,5 +18,14 @@
     <string name="message_UserFale">NO This User in my Database</string>
     <string name="title_PassFalse">Password False</string>
     <string name="message_PassFale">please Try Agains Password False</string>
+    <string name="mode_one">รับศพและจัดงาน</string>
+    <string name="mode_two">การณาปนกิจ</string>
+    <string name="mode_three">รายการทำบุญ</string>
+    <string name="wait_User">User Wait</string>
+    <string name="wait_admin">Admin Wait</string>
+    <string name="send">Send Data</string>
+    <string name="detail_name">ชื่อ นามสกุล (ผู้ตาย)</string>
+    <string name="sala">ศาลา</string>
+    <string name="sala_detail">ชื่อศาลา</string>
 
 </resources>

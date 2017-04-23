@@ -113,6 +113,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //password true
                 Toast.makeText(MainActivity.this,"welcome"+ loginStrings[1],
                         Toast.LENGTH_SHORT).show();
+
+                intenToService(loginStrings);
+
             } else {
                 //password False
                 myAlert.myDialog(getResources().getString(R.string.title_PassFalse),
@@ -124,5 +127,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }//checkUserAnPassword
+
+    private void intenToService(String[] loginStrings) {
+
+        int i = Integer.parseInt(loginStrings[8]);
+        switch (i) {
+            case 0://For User
+                Intent intent = new Intent(MainActivity.this,ModeOne.class);
+                intent.putExtra("Login", loginStrings);
+                startActivity(intent);
+                finish();
+                break;
+            case 1://For Admin
+                Intent intent1 = new Intent(MainActivity.this,WaitAdmin.class);
+                intent1.putExtra("Login", loginStrings);
+                startActivity(intent1);
+                finish();
+                break;
+        }
+
+    }
 
 }   // Main Class
