@@ -3,6 +3,7 @@ package bangtanrut.songklod.bookgazebo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -60,10 +61,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 myAlert.myDialog(getResources().getString(R.string.title_HaveSpace),
                         getResources().getString(R.string.title_HaveSpace));
             } else {
+                //NO space
+                checkUserAnPassword();
             }
 
         }
 
     }   // onClick
+
+    private void checkUserAnPassword() {
+
+        boolean b = true;
+        MyConstant myConstant = new MyConstant();
+        String[] columnUserStrings = myConstant.getColumnUserStrings();
+        String[] loginStrings = new String[columnUserStrings.length];
+
+        try {
+
+            GetData getData = new GetData(MainActivity.this);
+            getData.execute(myConstant.getUrlGetUser());
+            String strJSON = getData.get();
+            Log.d("23Aprilv1", "JSON ==>" + strJSON);
+
+        } catch (Exception e) {
+            Log.d("23Aprilv1", "e checkUser ==>" + e.toString());
+        }
+
+    }//checkUserAnPassword
 
 }   // Main Class

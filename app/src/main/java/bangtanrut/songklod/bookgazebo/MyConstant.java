@@ -6,7 +6,28 @@ package bangtanrut.songklod.bookgazebo;
 
 public class MyConstant {
 
+    //for url
     private String urlPostUser = "http://coderobot.webstarterz.com/coderobot.webstarterz.com/bauy/app/postUser.php";
+    private String urlGetUser ="http://coderobot.webstarterz.com/coderobot.webstarterz.com/bauy/app/getUser.php";
+    //for general
+    private String[] columnUserStrings = new String[]{
+            "id",
+            "Name",
+            "Surname",
+            "IdCard",
+            "Address",
+            "Phone",
+            "User",
+            "Password",
+            "Status"};
+
+    public String getUrlGetUser() {
+        return urlGetUser;
+    }
+
+    public String[] getColumnUserStrings() {
+        return columnUserStrings;
+    }
 
     public String getUrlPostUser() {
         return urlPostUser;
