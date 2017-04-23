@@ -14,5 +14,9 @@
     <string name="message_HaveSpace">Please Fill All Every Blank</string>
     <string name="title_FalseIDcard">ID=Card False</string>
     <string name="messge_FalseIDcard">Plase Fill ID-Card 13 Digi</string>
+    <string name="title_UserFalse">UserFalse</string>
+    <string name="message_UserFale">NO This User in my Database</string>
+    <string name="title_PassFalse">Password False</string>
+    <string name="message_PassFale">please Try Agains Password False</string>
 
 </resources>

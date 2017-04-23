@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -75,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MyConstant myConstant = new MyConstant();
         String[] columnUserStrings = myConstant.getColumnUserStrings();
         String[] loginStrings = new String[columnUserStrings.length];
+        MyAlert myAlert = new MyAlert(MainActivity.this);
 
         try {
 
@@ -82,6 +87,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             getData.execute(myConstant.getUrlGetUser());
             String strJSON = getData.get();
             Log.d("23Aprilv1", "JSON ==>" + strJSON);
+
+            JSONArray jsonArray = new JSONArray(strJSON);
+            for (int i=0;i<jsonArray.length();i++){
+
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+
+                Log.d("23Aprilv1", "user ==>" + userString);
+
+                if (userString.equals(jsonObject.getString(columnUserStrings[6]))) {
+                    b = !b;
+                    for (int i1=0;i1<columnUserStrings.length;i1++){
+                        loginStrings[i1] = jsonObject.getString(columnUserStrings[i1]);
+                        Log.d("23Aprilv1", "loginString(" + i1 + ") ==>" + loginStrings[i1]);
+                    }//for
+                }//if
+
+            }//for
+
+            if (b) {
+                //User false
+                myAlert.myDialog(getResources().getString(R.string.title_UserFalse),
+                        getResources().getString(R.string.message_UserFale));
+            } else if (passwordString.equals(loginStrings[7])) {
+                //password true
+                Toast.makeText(MainActivity.this,"welcome"+ loginStrings[1],
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                //password False
+                myAlert.myDialog(getResources().getString(R.string.title_PassFalse),
+                        getResources().getString(R.string.message_PassFale));
+            }
 
         } catch (Exception e) {
             Log.d("23Aprilv1", "e checkUser ==>" + e.toString());
