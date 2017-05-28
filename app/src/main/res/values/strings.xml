@@ -4,7 +4,7 @@
     <string name="user">User :</string>
     <string name="password">Password :</string>
     <string name="new_register">New Register</string>
-    <string name="name">Name</string>
+    <string name="name">ชื่อ-สกุล</string>
     <string name="surname">Surname</string>
     <string name="id_card">id-Card</string>
     <string name="address">Address</string>
@@ -27,5 +27,38 @@
     <string name="detail_name">ชื่อ นามสกุล (ผู้ตาย)</string>
     <string name="sala">ศาลา</string>
     <string name="sala_detail">ชื่อศาลา</string>
-
+    <string name="detail_checkbox">รายการ</string>
+    <string name="checkbox1">ค่าณาปาสถาน ๓,๓๐๐ บาท</string>
+    <string name="checkbox2">ค่าน้ำมันเผาศพ ๓,๐๐๐ บาท</string>
+    <string name="checkbox3">ค่าหยวก ๗๐๐ บาท</string>
+    <string name="checkbox4">ศาลา ๑ วัน ๑ คืน(ราคา ๓,๐๐๐ บาท)</string>
+    <string name="checkbox5">ศาลาตั้งศพ ๑ วัน(ราคา ๒,๒๐๐ บาท)</string>
+    <string name="checkbox6">ค่าจัดสถานที่เผาศพ(กรณีนำศพมาจากที่อื่น)๑,๐๐๐ บาท</string>
+    <string name="checkbox7">ค่ารถรับศพ(เฉพราะเขตกรุงเทพๆ และปริมณฑล)๑,๒๐๐ บาท</string>
+    <string name="checkbox8">ค่าจัดดอก หน้าศพ,หน้าพระ,กรอบรูป
+     แบบที่ ราคา ๑๒,๐๐๐ - ๔๐,๐๐๐ บาท(หากเจ้าภาพนำร้านดอกไม้จากภายนอกมาจัดหน้าศพ ทางวัดๆ คิดค่าบำรุงวัด ๑,๐๐๐ บาท)</string>
+    <string name="radiobutton9">แบบที่ ๑ ราคา ๑๒,๐๐๐ บาท</string>
+    <string name="radiobutton10">แบบที่ ๒ ราคา ๔๐,๐๐๐ บาท</string>
+    <string name="detail_merits">การทำบุญ</string>
+    <string name="merits1">โบสถ์</string>
+    <string name="merits2">วิหาร</string>
+    <string name="merits3">พิพิธภัณฑ์</string>
+    <string name="sala1">ศาลาที่๑</string>
+    <string name="sala2">ศาลาที่๒</string>
+    <string name="sala3">ศาลาที่๓</string>
+    <string name="sala4">ศาลาที่๔</string>
+    <string name="sala5">ศาลาที่๕</string>
+    <string name="sala6">ศาลาที่๖</string>
+    <string name="sala7">ศาลาที่๗</string>
+    <string name="sala8">ศาลาที่๘</string>
+    <string name="sala9">ศาลาที่๙</string>
+    <string name="sala10">ศาลาที่๑๐</string>
+    <string name="sala11">ศาลาที่๑๑</string>
+    <string name="sala12">ศาลาที่๑๒</string>
+    <string name="hint_date">วันที่.../เดือน.../พ.ศ...</string>
+    <string name="name_merits">ชื่อศพหรืออัฐิ</string>
+    <string name="hint_name_merits">ชื่อ-ที่อยู่ผู้ติดต่อ...</string>
+    <string name="merits_phone">เบอร์โทรศัพท์</string>
+    <string name="hint_merits_phone">090-000-0000</string>
 </resources>
+

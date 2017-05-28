@@ -140,15 +140,81 @@
                     android:src="@mipmap/ic_calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-
             </LinearLayout>
-
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_checkbox"
+                android:textStyle="bold"
+                android:textSize= "18sp" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:text="@string/checkbox6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <CheckBox
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+                android:lines="3"
+            android:text="@string/checkbox7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox8"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobutton9"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobutton10"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
